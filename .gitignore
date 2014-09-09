@@ -1,0 +1,12 @@
+# do not include content that will be generated automatically
+data/
+output/
+log/
+*.log
+www/graphs/
+
+# do not include machine specific RRDtool files
+*.rrd
+
+# do not include configuration files other than the examples
+*.cfg

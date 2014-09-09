@@ -1,0 +1,8 @@
+# copy this file and remove the .example extension before editing
+
+##################
+# graphwater.cfg #
+##################
+
+# directory where the graphs should be copied to
+WATERWWWDIR='/var/www/graphs/water/'

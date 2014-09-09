@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Metermeter</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootply.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="navbar navbar-static" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href=""><b>Bloem</b></a>
+					<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="glyphicon glyphicon-chevron-down"></span>
+					</a>
+				</div>
+					
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-left">
+						<li class="active"><a href="#consumption"><span class="glyphicon glyphicon-stats"></span> Consumption</a></li>
+						<li class="disabled"><a href="#meters"><span class="glyphicon glyphicon-dashboard"></span> Meters</a></li>
+					</ul>
+					
+					<ul class="nav navbar-nav navbar-right">
+						<li class="disabled"><a href="#settings"><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
+						<li class="disabled"><a href="#signout"><span class="glyphicon glyphicon-user"></span> Sign out</a></li>
+					</ul>
+
+				</div><!--/.nav-collapse -->
+			</div>
+		</div><!--/navbar -->
+
+		<div class="container">
+			<div class="page-header">
+			  <h1>Consumption</h1>
+			</div>
+
+			<ul class="nav nav-tabs nav-justified" role="tablist">
+			  <li class="active"><a href="#water" role="tab" data-toggle="tab">water</a></li>
+				<li><a href="#gas" role="tab" data-toggle="tab">gas</a></li>
+				<li class="disabled"><a href="#electricity" role="tab" data-toggle="tab">electricity</a></li>
+
+
+			</ul>
+			<div class="tab-content">
+				<div id="electricity" class="tab-pane">
+					<div class="alert alert-warning" role="alert">not available</div>
+				</div>
+				<div id="gas" class="tab-pane">
+					<img src="graphs/gas/gas_1h.png" class="img-responsive center-block">
+					<img src="graphs/gas/gas_4h.png" class="img-responsive center-block">
+					<img src="graphs/gas/gas_24h.png" class="img-responsive center-block">
+				</div>
+				<div id="water" class="tab-pane active">
+					<img src="graphs/water/water_1h.png" class="img-responsive center-block">
+					<img src="graphs/water/water_4h.png" class="img-responsive center-block">
+					<img src="graphs/water/water_24h.png" class="img-responsive center-block">
+				</div>
+			</div>
+
+		</div>
+
+			<script src="js/jquery-1.11.1.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

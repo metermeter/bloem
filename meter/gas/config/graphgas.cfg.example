@@ -1,0 +1,8 @@
+# copy this file and remove the .example extension before editing
+
+################
+# graphgas.cfg #
+################
+
+# directory where the graphs should be copied to
+GASWWWDIR='/var/www/graphs/gas/'
